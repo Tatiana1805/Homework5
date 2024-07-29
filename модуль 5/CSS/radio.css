@@ -1,0 +1,39 @@
+@import url('./style.css');
+
+.form-color {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.form-color .radio-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 15px;
+    line-height: 34px;
+    border-right: none;
+    user-select: none;
+    border-radius: 15px;
+
+}
+.radio-button {
+    display: none;
+}
+
+.radio-label {
+    cursor: pointer;
+}
+
+.form-radio__label {
+    padding: 5px;
+}
+
+
+.radio-label:hover {
+    background-color:darkgray;
+}
+
+
+.form-color input[type='radio']:checked + .radio-label{
+    background-color:aquamarine;
+}
+

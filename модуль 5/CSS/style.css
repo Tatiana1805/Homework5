@@ -1,0 +1,19 @@
+* {
+  font-family: "Great Vibes", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 25px;
+}
+:root {
+  --bg: rgba(113, 122, 172, 0.5);
+  --color: #fff;
+  --second-color: rgba(0, 0, 0, 0.5);
+
+  --dark-color: rgba(0, 0, 0, 0.5);
+  --light-color: #fff;
+
+  --dark-second-color: #212727;
+  --light-second-color: #637a8869;
+}
+
+

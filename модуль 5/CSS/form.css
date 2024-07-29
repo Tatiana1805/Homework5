@@ -1,0 +1,60 @@
+@import url('./style.css');
+.form-card {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: var(--bg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6)
+}
+
+.form-user__label {
+    display: flex;
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--color);
+}
+
+.form-user {
+    padding: 10px;
+    margin: 20px;
+    color: var(--color);
+}
+
+.form-text {
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+}
+
+.form-color input[type='radio'][id='color-dark']:checked ~ .form-card {
+    --bg: var(--dark-color);
+    --color: var(--light-color);
+    --second-color: var(--dark-second-color);
+}
+
+.form-color input[type='radio'][id='color-light']:checked ~ .form-card {
+    --bg: var(--light-color);
+    --color: var(--dark-color);
+    --second-color: var(--light-second-color);
+}
+
+.form-card:hover {
+    background: var(--second-color);
+    color: var(--color);
+    box-shadow: 0 0 5px var(--second-color), 0 0 25px var(--second-color), 0 0 50px var(--second-color), 0 0 100px var(--second-color);
+}
+
+
